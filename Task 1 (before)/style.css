@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+body::before{
+    content:"Using::before";
+    font-size: 3rem;
+    text-align: center;
+    height: 200px;
+    width:100%;
+    border:5px solid;
+    display:block;
+    background-color:lightblue;
+    margin-top:10px;
+}
+body::after{
+    content:"Using::after";
+    font-size: 3rem;
+    text-align: center;
+    height: 200px;
+    width:100%;
+    border:5px solid;
+    display:block;
+    background-color:lightcoral;
+    margin-top:10px;
+}

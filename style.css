@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+    display: grid;
+    place-items: center;
+}
+:root{
+    --primary-color: #ADFA9B;
+    --secondary-color:#FFFFFE;
+    --accent-color: #609F3F;
+}
+.parent{
+    width:400px;
+    height:300px;
+    background-color:var(--primary-color);
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 4px 4px 20px #ccc;
+}
+a > button{
+    padding:10px 15px;
+    border-radius: 2em;
+    border: 0;
+    background-color: var(--accent-color);
+    color: #FFFFFE;
+    cursor:pointer;
+    transition:0.3s ease;
+    font-size: 1rem;
+}
+a > button:hover{
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+}
+.child > :first-child{
+    font-size: 1.4rem;
+}
+.child > :nth-child(2){
+    font-size: 1rem;
+    margin-top: -2%;
+    margin-bottom: 4%;
+}
